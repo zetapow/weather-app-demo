@@ -15,7 +15,7 @@ const handleClick = () => {
     .then((res) => res.json())
     .then((data) => {
         dispalySection.innerHTML =
-      ` <p>${data.location.name}'s teamperature is ${data.current.temp_c}℃.</p>
+      ` <p>${data.location.name}'s temperature is ${data.current.temp_c}℃.</p>
         <p>It's ${data.current.condition.text}.</p>
         <img src="${data.current.condition.icon}" alt="icon"/>
       `;
